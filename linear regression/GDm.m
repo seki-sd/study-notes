@@ -5,7 +5,11 @@ price = [2.000, 2.500, 2.900, 3.147, 4.515, 4.903, 5.365, 5.704, 6.853, 7.971, 8
 X = [ones(length(year), 1), year'];
 y = price';
 theta = [1 1]';
-alpha = 0.0000001;
-num_iters = 100;
+alpha = 0.01;
+num_iters = 200;
 [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters); 
 predictions = X * theta;
+scatter(year, price);
+hold on
+plot(year, predictions);
+xlabel('year+2000');ylabel('price/RMB');
