@@ -1,3 +1,11 @@
+# ***********************************************
+# Title: linear regression with GD
+# Author : johnfarrell  
+# Date   : 2016-01-01
+# HomePage : github.com/john7farrell/
+# Email  : xjz199273@163.com
+# ***********************************************
+
 import pandas as pd
 from numpy import *
 import matplotlib.pyplot as plt
@@ -49,10 +57,13 @@ for i in range(niters):
 	plt.scatter(year, price)
 	plt.plot(year, xx * theta)
 
-print("GD over\n\n\n")
-print(J_history)
-print("GD over\n\n\n")
+print("GD over\n")
+print("\n\n\ncurrent theta: \n\n")
 print(theta.T)
+plt.show()
+
+plt.scatter(year, price)
+plt.plot(year, xx * theta)
 plt.show()
 
 x2014 = mat([1, 14])

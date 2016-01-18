@@ -1,4 +1,12 @@
-﻿import pandas as pd
+﻿# ***********************************************
+# Title: linear regression with LMS
+# Author : johnfarrell  
+# Date   : 2016-01-01
+# HomePage : github.com/john7farrell/
+# Email  : xjz199273@163.com
+# ***********************************************
+
+import pandas as pd
 from numpy import *
 import matplotlib.pyplot as plt
 
@@ -59,8 +67,3 @@ x2014 = mat([1, 2014])
 y2014 = float(h(x2014, theta).T)
 
 print("\nThe Hypothesis of price in 2014 is\n\n" + str(y2014) + " * 10^3 CHN\n\n")
-
-# Tests
-# theta0 = mat([0, 0]).T
-# print(yy)
-# print(type(yy))
