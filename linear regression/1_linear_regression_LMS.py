@@ -1,8 +1,7 @@
 ﻿# ***********************************************
 # Title: linear regression with LMS
-# Author : johnfarrell  
+# Author : johnfarrell
 # Date   : 2016-01-01
-# HomePage : github.com/john7farrell/
 # Email  : xjz199273@163.com
 # ***********************************************
 
@@ -16,20 +15,10 @@ price = [2.000, 2.500, 2.900, 3.147, 4.515, 4.903, 5.365, 5.704,
 6.853, 7.971, 8.561, 10.000, 11.280, 12.900]
 n = len(year)
 
-# price1 = []
-# for i in price: 
-	# i *= 1000
-	# price1.append(i)
-
-# price = price1
-
-# print n
 xx = mat(array(year))
 xx = xx.T
 x0 = mat(ones((n, 1)))
-# print x0
 xx = hstack((x0, xx))
-print xx
 
 yy = mat(array(price))
 yy = yy.T
@@ -53,12 +42,14 @@ def J(theta, vx, vy):
 	return J
 
 theta = LMS(xx, yy)
+print("\n\n\ncurrent theta: \n\n")
 print(theta)
 
 yh = h(xx, theta)
-print(yh)
 print("\nThe cost of LMS method is \n")
 print(J(theta, xx, yy))
+
+# plot
 plt.scatter(year, price)
 plt.plot(year, yh)
 plt.show()

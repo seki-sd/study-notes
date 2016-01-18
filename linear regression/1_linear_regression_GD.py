@@ -1,8 +1,7 @@
 # ***********************************************
 # Title: linear regression with GD
-# Author : johnfarrell  
+# Author : johnfarrell 
 # Date   : 2016-01-01
-# HomePage : github.com/john7farrell/
 # Email  : xjz199273@163.com
 # ***********************************************
 
@@ -21,9 +20,7 @@ m = len(year)
 xx = mat(array(year))
 xx = xx.T
 x0 = mat(ones((m, 1)))
-# print x0
 xx = hstack((x0, xx))
-# print xx
 
 yy = mat(array(price))
 yy = yy.T
@@ -49,11 +46,8 @@ J_history = mat(ones((niters, 1)))
 for i in range(niters):
 	error = xx * theta - yy
 	theta = theta - alpha/m * xx.T * error
-	print theta
-	print("\n")
 	J_history[i, :] = J(theta, xx, yy)
 	print(J_history[i, :])
-	print("\n")
 	plt.scatter(year, price)
 	plt.plot(year, xx * theta)
 
@@ -62,6 +56,7 @@ print("\n\n\ncurrent theta: \n\n")
 print(theta.T)
 plt.show()
 
+# plot
 plt.scatter(year, price)
 plt.plot(year, xx * theta)
 plt.show()
