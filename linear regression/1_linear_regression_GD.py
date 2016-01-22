@@ -2,10 +2,10 @@
 # Title: linear regression with GD
 # Author : johnfarrell 
 # Date   : 2016-01-01
+# HomePage : github.com/john7farrell/
 # Email  : xjz199273@163.com
 # ***********************************************
 
-import pandas as pd
 from numpy import *
 import matplotlib.pyplot as plt
 
