@@ -15,14 +15,14 @@ http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb30
 
 JS is usually embedded into ```<head>``` tag.
 Functions for debugging:
-```
+```JavaScript
 alert(); // pop up
 console.log(); // print to console
 ```
 
 ## Basic gramma
 
-```
+```JavaScript
 ; // ended every line
 {...}; // code block
 // comment a line
@@ -34,7 +34,7 @@ lines */
 ## Types of variables
 
 Number
-```
+```JavaScript
 123; // integer
 0.345; // float
 1.234e3; // 1234 float
@@ -44,20 +44,20 @@ Infinity; // infinity number
 // + - * / %(modulo) 
 ```
 String
-```
+```JavaScript
 'abc';
 // or
 "abc";
 ```
 
 Boolean
-```
+```JavaScript
 true;
 false; // null undefined 0 NaN '': false
 ```
 
 Comparison
-```
+```JavaScript
 &&; // and
 ||; // or
 !; // not
@@ -70,7 +70,7 @@ Math.abs(1 / 3 - (1 - 2 / 3)) < 1e-9; // true
 ```
 
 null, undefined
-```
+```JavaScript
 null; // empty
 undefined; // undefined
 // Specially:
@@ -80,14 +80,14 @@ a === null || a === undefined;
 ```
 
 Array
-```
+```JavaScript
 [1, 2, 3.14, 'Hello', null, true]; // recommended
 new Array(1, 2, 3.14, 'Hello'); 
 // index from 0
 ```
 
 Object
-```
+```JavaScript
 var person = {
     name: 'Bob',
     age: 20,
@@ -97,14 +97,14 @@ person.name; // 'Bob' // 'objectName.attributeName' to access attributeVale
 ```
 
 Variable
-```
+```JavaScript
 var $_a = 2; // can be only claimed once
 b = 2; // global variable // not recommended // error in 'strict' mode
 ```
 
 ## String
 
-```
+```JavaScript
 // '' or ""
 "I'm OK"; 
 'I\'m \"OK\"!'; // \t \n \\('\')
@@ -134,7 +134,7 @@ j.substring(0); // Java
 
 ## Array
 
-```
+```JavaScript
 var arr = [1, 2, 3];
 arr.length; // 3
 arr.length = 6;
@@ -162,7 +162,7 @@ arr_copy === arr; // false
 
 ## Object
 
-```
+```JavaScript
 var person = {
     name: 'J', // Obj.Attr: attrValue // recommended
     'school': 'No.1 Middle School' //Obj[Key]: Value
@@ -177,7 +177,7 @@ person.hasOwnProperty('toString'); // false
 
 ## Condition
 
-```
+```JavaScript
 if () {
 } else if () {
 } else {
@@ -186,7 +186,7 @@ if () {
 
 ## Loop
 
-```
+```JavaScript
 var x = 0;
 for (var i=1; i<=10000; i++) {
     x = x + i;
@@ -212,7 +212,7 @@ do {
 
 ## Map & Set
 from ES6
-```
+```JavaScript
 var m = new Map();
 var s = new Set();
 // Map
@@ -233,7 +233,7 @@ s.delete(ele)
 
 ## iterable
 from ES6
-```
+```JavaScript
 // iterable: Array, Map, Set
 // for ... of iterate elements
 'use strict';
