@@ -1,4 +1,4 @@
-There are some of my study notes.
+# Some of my study notes.
 
 Some exercises of basic machine learning algorithms.
 - linear regression: in python. matlab
